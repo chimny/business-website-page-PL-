@@ -221,7 +221,6 @@ header button {
   }
 
   header button {
-    /* margin-top: 100px; */
     font-size: 38px;
     line-height: 80px;
     padding: 0 40px;
@@ -233,8 +232,8 @@ header button {
   }
 
   header img {
-    right: 0%;
-    /* height: 95%; */
+    right: -10%;
+
   }
 
 
@@ -291,7 +290,7 @@ header button {
 }
 
 
-/* skills section */
+/* skills section ,,Tworzę bardzo dobre strony internetowe" */
 
 
 
@@ -304,7 +303,7 @@ header button {
 }
 
 .skills {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -315,7 +314,7 @@ header button {
 
 #skillsTitle {
   font-size: 24px;
-  margin: 7% 15% 0% 15%;
+  margin: 5% 15% 0% 15%;
 }
 
 .module img {
@@ -330,7 +329,7 @@ header button {
 }
 
 .module p {
-  margin: 0 10%;
+  margin: 0 2.5%;
 }
 
 
@@ -365,6 +364,12 @@ header button {
 
   #skillsTitle {
     width: 100%;
+    margin: 7% 5% 0% 5%;
+  }
+
+  .module img {
+    max-width: 100%;
+
   }
 }
 
@@ -372,4 +377,19 @@ header button {
   #skillsTitle {
     font-size: 60px;
   }
+
+  .module img {
+    margin-top: 5%;
+    height: 225px;
+    width: 375px;
+  }
+
+  .mainText {
+    font-size: 36px;
+  }
+
+  .mainText p:nth-of-type(2) {
+    font-size: 21px;
+  }
+
 }
