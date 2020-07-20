@@ -393,3 +393,19 @@ header button {
   }
 
 }
+
+/* portfolio section */
+
+.portfolio {
+  background-color: #1e1e1e;
+  height: 200vh;
+}
+
+.portfolio * {
+  font-family: 'Saira Condensed', sans-serif;
+}
+
+.portfolio>p {
+  font-weight: bold;
+  color: #FFF;
+}
