@@ -186,7 +186,7 @@ header button {
   }
 
   header img {
-    right: 0%;
+    right: -15%;
     height: 85%;
   }
 
@@ -303,7 +303,6 @@ header button {
 }
 
 .skills {
-  /* margin: 0 auto; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -432,6 +431,7 @@ header button {
 
 .description {
   padding: 7.5% 0;
+  margin-bottom: 5%;
 }
 
 .description p {
@@ -485,7 +485,7 @@ header button {
   }
 }
 
-@media(orientation: landscape) and (min-width: 1024px) {
+@media(orientation: landscape) and (min-width: 1023px) {
   .portfolio>p {
     padding: 45px 10px;
     font-size: 60px;
@@ -506,6 +506,13 @@ header button {
     font-size: 21px;
 
   }
+}
 
+/* motto section */
 
+section.motto {
+  min-height: 100vh;
+  background-image: url('../images/motto.jpg');
+  background-position: 30% 15%;
+  background-color: #003F72;
 }
