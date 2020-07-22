@@ -511,8 +511,38 @@ header button {
 /* motto section */
 
 section.motto {
+  position: relative;
   min-height: 100vh;
   background-image: url('../images/motto.jpg');
   background-position: 30% 15%;
-  background-color: #003F72;
+}
+
+.mottoContent {
+  position: absolute;
+  background-color: (0.5, #003f72);
+  width: 100%;
+  height: 100%;
+}
+
+.mottoContent>p {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Saira Condensed', sans-serif;
+}
+
+.mottoContent>p:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10% 12%;
+  font-size: 30px;
+}
+
+.mottoContent>p:nth-child(2) {
+  margin-top: 15%;
+  font-size: 18px;
+}
+
+.mottoContent>p:nth-child(3) {
+  margin-top: 5%;
+  font-size: 11px;
 }
