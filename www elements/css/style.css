@@ -317,7 +317,7 @@ header button {
 }
 
 .module {
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
 }
 
 .module img {
@@ -365,9 +365,9 @@ header button {
   }
 
   .module img {
-    margin-top: 5%;
-    height: 150px;
-    width: 250px;
+    margin-top: 2.5%;
+    height: 200px;
+    width: 334px;
   }
 
 }
