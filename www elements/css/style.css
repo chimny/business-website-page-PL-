@@ -316,6 +316,10 @@ header button {
   margin: 5% 15% 0% 15%;
 }
 
+.module {
+  margin-bottom: 5%;
+}
+
 .module img {
   margin-top: 5%;
   height: 120px;
@@ -347,6 +351,26 @@ header button {
   }
 }
 
+@media(orientation: portrait) and (min-width: 768px) {
+  #skillsTitle {
+    font-size: 45px;
+  }
+
+  .mainText {
+    font-size: 37px;
+  }
+
+  .mainText p:nth-of-type(2) {
+    font-size: 30px;
+  }
+
+  .module img {
+    margin-top: 5%;
+    height: 150px;
+    width: 250px;
+  }
+
+}
 
 
 
@@ -367,10 +391,10 @@ header button {
     margin: 7% 5% 0% 5%;
   }
 
-  .module img {
+  /* .module img {
     max-width: 100%;
 
-  }
+  } */
 }
 
 @media(orientation: landscape) and (min-width: 1024px) {
