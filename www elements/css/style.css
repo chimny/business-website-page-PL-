@@ -647,3 +647,66 @@ section.motto {
     margin-top: 3%;
   }
 }
+
+@media(orientation: landscape) and (min-width: 1024px) {
+
+  .mottoContent>p:nth-child(1) {
+    padding: 10% 12%;
+    font-size: 60px;
+  }
+
+  .mottoContent>p:nth-child(2) {
+    margin-top: 5%;
+    font-size: 32px;
+  }
+
+  .mottoContent>p:nth-child(3) {
+    margin-top: 5%;
+    font-size: 28px;
+  }
+
+}
+
+/* hobby section */
+
+.hobby p {
+  font-size: 25px;
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 12% 0;
+}
+
+.hobby img {
+  display: block;
+}
+
+@media (orientation: portrait) and (min-width: 411px) {
+  .hobby p {
+    font-size: 30px;
+  }
+}
+
+@media (orientation: landscape) {
+  .hobby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hobby p {
+    margin: 2% 0;
+    width: 100%;
+  }
+
+  .hobby img {
+    width: 50%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .hobby p {
+    font-size: 60px;
+  }
+}
