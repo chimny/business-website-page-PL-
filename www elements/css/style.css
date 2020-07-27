@@ -106,19 +106,20 @@ header button {
 @media(orientation: portrait) and (min-width: 768px) {
 
   header p {
-    font-size: 80px;
+    font-size: 100px;
 
   }
 
   header div h1,
   h2 {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   header button {
-    margin-top: 40px;
+    margin-top: 70px;
     line-height: 50px;
     font-size: 20px;
+    border: 2px solid white;
   }
 
   header img {
@@ -128,6 +129,24 @@ header button {
   }
 }
 
+@media(orientation: portrait) and (min-width: 1024px) {
+
+  header p {
+    font-size: 160px;
+
+  }
+
+  header div h1,
+  h2 {
+    font-size: 60px;
+  }
+
+  header button {
+    font-size: 40px;
+    padding: 15px 20px;
+  }
+
+}
 
 @media(orientation: landscape) {
 
@@ -162,7 +181,6 @@ header button {
     line-height: 40px;
   }
 }
-
 
 @media(orientation: landscape) and (min-width: 1024px) {
 
@@ -293,8 +311,6 @@ header button {
 /* skills section ,,Tworzę bardzo dobre strony internetowe" */
 
 
-
-
 #skillsTitle,
 .mainText {
   text-transform: uppercase;
@@ -372,9 +388,6 @@ header button {
 
 }
 
-
-
-
 @media(orientation: landscape) {
   .skills {
     flex-direction: row;
@@ -438,8 +451,6 @@ header button {
   text-align: center;
 }
 
-
-
 .project img {
   max-width: 100%;
   height: auto;
@@ -477,9 +488,6 @@ header button {
 }
 
 
-
-
-
 @media(orientation: landscape) {
   .project {
     display: flex;
@@ -501,6 +509,42 @@ header button {
     flex-direction: row-reverse;
   }
 }
+
+@media(orientation: portrait) and (min-width: 768px) {
+  .portfolio>p {
+    font-size: 35px;
+    padding: 30px 10px;
+  }
+
+  .description {
+    padding: 7.5% 0;
+    margin-bottom: 5%;
+    height: 30%;
+    width: auto;
+  }
+
+  .description p {
+    text-align: left;
+    color: white;
+    padding-left: 10%;
+  }
+
+  .description :nth-child(1) {
+    font-size: 30px;
+  }
+
+  .description :nth-child(2) {
+    font-size: 20px;
+  }
+
+}
+
+@media(orientation: portrait) and (min-width: 1024px) {
+  .project img {
+    width: 100%;
+  }
+}
+
 
 
 @media(orientation: landscape) and (min-width: 640px) {
@@ -569,4 +613,121 @@ section.motto {
 .mottoContent>p:nth-child(3) {
   margin-top: 5%;
   font-size: 11px;
+}
+
+@media(orientation: portrait) and (min-width: 768px) {
+
+  .mottoContent>p:nth-child(1) {
+    padding: 10% 12%;
+    font-size: 60px;
+  }
+
+  .mottoContent>p:nth-child(2) {
+    margin-top: 15%;
+    font-size: 37px;
+  }
+
+  .mottoContent>p:nth-child(3) {
+    margin-top: 5%;
+    font-size: 32px;
+  }
+
+
+}
+
+
+
+
+@media(orientation: landscape) {
+  section.motto {
+    background-position: 25% 20%;
+  }
+
+  .mottoContent>p:nth-child(2) {
+    margin-top: 3%;
+  }
+}
+
+@media(orientation: landscape) and (min-width: 1024px) {
+
+  .mottoContent>p:nth-child(1) {
+    padding: 10% 12%;
+    font-size: 60px;
+  }
+
+  .mottoContent>p:nth-child(2) {
+    margin-top: 5%;
+    font-size: 32px;
+  }
+
+  .mottoContent>p:nth-child(3) {
+    margin-top: 5%;
+    font-size: 28px;
+  }
+
+}
+
+/* hobby section */
+
+.hobby p {
+  font-size: 25px;
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 12% 0;
+}
+
+.hobby img {
+  display: block;
+}
+
+.images {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  transition: 1;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  transition: 5s;
+}
+
+@media (orientation: portrait) and (min-width: 411px) {
+  .hobby p {
+    font-size: 30px;
+  }
+}
+
+@media (orientation: landscape) {
+  .hobby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hobby p {
+    margin: 2% 0;
+    width: 100%;
+  }
+
+  .hobby .images {
+    width: 50%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .hobby p {
+    font-size: 60px;
+  }
+
+  .images:hover>.overlay {
+    display: block;
+    cursor: pointer;
+  }
 }
