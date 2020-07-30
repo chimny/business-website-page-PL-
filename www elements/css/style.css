@@ -789,7 +789,7 @@ section.contact {
   font-family: 'Saira', sans-serif;
 }
 
-.contact p {
+.contact>p {
   color: #FFF;
   text-transform: uppercase;
   text-align: center;
@@ -809,7 +809,7 @@ section.contact {
   display: block;
   width: 100%;
   line-height: 36px;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 
 .contact form input:last-of-type {
@@ -827,8 +827,93 @@ section.contact {
   line-height: 40px;
   color: white;
   width: 100%;
+  margin-top: 20px;
+}
+
+.socialmedia {
+  margin-top: 20px;
+  padding-left: 30px;
 }
 
 .socialmedia li {
+  display: flex;
+  text-decoration: none;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  padding-bottom: 30px
+}
+
+.socialmedia li>p {
+  display: block;
   color: white;
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.socialmedia li img {
+
+  margin-right: 20px;
+  height: 36px;
+}
+
+@media (orientation:portrait)and (min-width:411px) {
+  .socialmedia {
+    padding-left: 70px;
+  }
+
+  .socialmedia li {
+    padding-bottom: 30px
+  }
+
+  .socialmedia li>p {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .socialmedia li img {
+    height: 40px;
+  }
+}
+
+
+@media (orientation:portrait)and (min-width:411px) {
+  .contact>p {
+
+    font-size: 40px;
+    font-weight: 600;
+    padding: 50px 0 40px 0;
+  }
+
+  .contact form button {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+
+
+  .socialmedia li {
+    padding-bottom: 30px
+  }
+
+  .socialmedia li>p {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .socialmedia li img {
+    height: 50px;
+  }
+}
+
+
+
+
+/* footer section */
+footer {
+  background-color: #29a9df;
+  font-family: 'Saira', sans-serif;
+  text-align: center;
+  height: 15vh;
+  padding-top: 5vh;
 }
