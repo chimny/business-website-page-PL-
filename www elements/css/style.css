@@ -24,7 +24,7 @@ header>* {
 }
 
 header .welcome {
-  top: 7%;
+  top: 5%;
   left: 5%;
   right: 5%;
   text-align: center;
@@ -388,6 +388,25 @@ header button {
 
 }
 
+
+@media(orientation: portrait) and (min-width: 1024px) {
+  #skillsTitle {
+    font-size: 61px;
+  }
+
+  .mainText {
+    font-size: 42px;
+  }
+
+  .module p:nth-of-type(2) {
+
+    font-size: 32px;
+  }
+
+}
+
+
+
 @media(orientation: landscape) {
   .skills {
     flex-direction: row;
@@ -582,6 +601,7 @@ section.motto {
   position: relative;
   min-height: 100vh;
   background-image: url('../images/motto.jpg');
+  background-attachment: fixed;
   background-position: 30% 15%;
 }
 
@@ -707,8 +727,9 @@ section.motto {
 
 .overlay,
 .overlay p,
-img {
+.hobby img {
   transition: 1s;
+  width: 100%;
 }
 
 .images img {
@@ -719,6 +740,13 @@ img {
 @media (orientation: portrait) and (min-width: 411px) {
   .hobby p {
     font-size: 30px;
+  }
+}
+
+
+@media (orientation: portrait) and (min-width: 411px) {
+  .hobby p {
+    font-size: 50px;
   }
 }
 
@@ -897,12 +925,55 @@ section.contact {
   }
 
   .socialmedia li>p {
-    font-size: 30px;
+    font-size: 23px;
     line-height: 50px;
   }
 
   .socialmedia li img {
     height: 50px;
+  }
+}
+
+@media (orientation:landscape)and (min-width:411px) {
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact>p {
+    width: 100%;
+    font-size: 28px;
+
+  }
+
+  .contact form {
+    width: 50%;
+  }
+
+  .contact form input {
+    width: 100%;
+
+  }
+
+  .contact form input:last-of-type {
+    display: block;
+    height: 195px;
+    margin: 10px auto;
+  }
+
+
+  .contact form button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (orientation:landscape)and (min-width:1024px) {
+  .socialmedia li>p {
+    font-size: 22px;
+
   }
 }
 
