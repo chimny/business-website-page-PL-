@@ -9,6 +9,44 @@ font-family: 'Saira Condensed', sans-serif; */
   max-width: 100%;
 }
 
+/* menu */
+
+.burger {
+  position: fixed;
+  top: 5%;
+  left: 7%;
+  z-index: 2;
+  font-size: 30px;
+}
+
+.fas {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
+
+
+aside {
+  position: fixed;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  width: 40%;
+  right: 0;
+  height: 100vh;
+  z-index: 4;
+  transition: .3s;
+}
+
+.hiddenMenu {
+  right: -40%;
+}
+
+
 /* sekcja header */
 header {
   position: relative;
