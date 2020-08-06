@@ -18,12 +18,14 @@
   <div class='burger'><i class="fas fa-bars show"></i><i class="fas fa-times"></i></div>
   <nav>
     <aside class='hiddenMenu'>
-      <a href="#">Strona główna</a>
-      <a href="#">Umiejętności</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Motto</a>
-      <a href="#">Hobby</a>
-      <a href="#">Kontakt</a>
+      <div>
+        <a href="#">Strona główna</a>
+        <a href='#skillSection'>Umiejętności
+        </a>
+        <a href="#porfolioSection">Portfolio</a>
+        <a href="#mottoSection">Motto</a>
+        <a href="#hobbySection">Hobby</a>
+        <a href="#contactSection">Kontakt</a></div>
     </aside>
   </nav>
   <header>
@@ -35,7 +37,7 @@
     </div>
     <img src="images/photo1.png" alt="Jan Nowak">
   </header>
-  <section class='skills'>
+  <section class='skills' id='skillSection'>
 
 
     <p id="skillsTitle">tworzę bardzo dobre strony internetowe</p>
@@ -62,7 +64,7 @@
     </div>
 
   </section>
-  <section class='portfolio'>
+  <section class='portfolio' id='porfolioSection'>
     <p>projekty, z których jestem dumny</p>
     <div class='project'><img src="images/portfolio1.jpg" alt="interia">
       <div class="description">
@@ -97,7 +99,7 @@
       </div>
     </div>
   </section>
-  <section class='motto'>
+  <section class='motto' id='mottoSection'>
     <div class="mottoContent">
       <p>moje życiowe motto</p>
       <p>,,Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptate deserunt sequi aliquam doloremque
@@ -107,7 +109,7 @@
       <p>Steve Jobs</p>
     </div>
   </section>
-  <section class='hobby'>
+  <section class='hobby' id='hobbySection'>
     <p>w wolnym czasie uwielbiam</p>
     <div class="images">
       <div class="overlay">
@@ -133,7 +135,7 @@
 
 
   </section>
-  <section class="contact">
+  <section class="contact" id='contactSection'>
     <p>skontaktuj się ze mną</p>
     <form>
       <input type="text" placeholder='twoję imię'>

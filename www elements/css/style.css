@@ -7,6 +7,7 @@ font-family: 'Saira Condensed', sans-serif; */
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
+  scroll-behavior: smooth;
 }
 
 /* menu */
@@ -14,7 +15,7 @@ font-family: 'Saira Condensed', sans-serif; */
 .burger {
   position: fixed;
   top: 5%;
-  left: 7%;
+  right: 7%;
   z-index: 2;
   font-size: 30px;
 }
@@ -27,23 +28,32 @@ font-family: 'Saira Condensed', sans-serif; */
   display: block;
 }
 
-
-
-
 aside {
   position: fixed;
   background-color: black;
-  color: white;
-  text-decoration: none;
   width: 40%;
-  right: 0;
+  left: 0;
   height: 100vh;
   z-index: 4;
   transition: .3s;
 }
 
+aside div {
+  margin-top: 15vh;
+}
+
+aside a {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Saira Condensed', sans-serif;
+  text-decoration: none;
+  padding-left: 11px;
+  margin: 15% 0;
+}
+
 .hiddenMenu {
-  right: -40%;
+  left: -40%;
 }
 
 
