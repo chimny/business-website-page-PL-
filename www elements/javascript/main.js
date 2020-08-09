@@ -22,8 +22,9 @@ const welcomeH1Content = 'jestem jan nowak';
 const welcomeH2Content = 'web developer - freelancer';
 
 let time = 100;
-let delay = 5000;
+let delay = 300;
 let i = 0;
+
 
 
 function typingEffect() {
@@ -33,29 +34,35 @@ function typingEffect() {
   if (i == welcomePContent.length) {
     clearInterval(timer);
     i = 0;
-    const typingEffect2 = () => {
+
+    function typingEffect2() {
       welcomeH1.textContent += welcomeH1Content[i];
       i++;
       if (i == welcomeH1Content.length) {
         clearInterval(timer2);
         i = 0;
 
-        // function typingEffect3() {
-        //   welcomeH2.textContent += welcomeH2Content[i];
-        //   i++;
-        //   if (i == welcomeH2Content.length) {
-        //     clearInterval(timer3);
-        //   }
+        function typingEffect3() {
+          welcomeH2.textContent += welcomeH2Content[i];
+          i++;
+          if (i == welcomeH2Content.length) {
+            clearInterval(timer3);
+          }
 
 
+        }
+        const timer3 = setInterval(typingEffect3, time);
       }
-      const timer3 = setInterval(typingEffect3, time);
     }
+
+
     const timer2 = setInterval(typingEffect2, time);
-
-
-
   }
 
+
+
 }
+
+
+
 const timer = setInterval(typingEffect, time);
