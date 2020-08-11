@@ -16,7 +16,7 @@ font-family: 'Saira Condensed', sans-serif; */
   position: fixed;
   top: 5%;
   right: 7%;
-  z-index: 2;
+  z-index: 3;
   font-size: 30px;
 }
 
@@ -57,7 +57,18 @@ aside a {
 }
 
 
-/* sekcja header */
+/*  header */
+
+.cursor {
+  opacity: 0;
+  /* transition: .3s; */
+}
+
+.active {
+  opacity: 1;
+  color: white;
+}
+
 header {
   position: relative;
   background-color: #29a6dc;
