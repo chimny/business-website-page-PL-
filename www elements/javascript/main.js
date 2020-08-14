@@ -80,17 +80,26 @@ function typingEffect() {
 
   }
 
-
-
 }
-
-
 
 const cursoranimationP = setInterval(() => {
   spanP.classList.toggle('active');
 }, flashingCursor);
 
-
-
-
 const timer = setInterval(typingEffect, time);
+
+
+// skills section apearance
+
+const skillSection = document.getElementById('skillSection');
+const module = document.querySelectorAll('.module');
+
+window.addEventListener('scroll', () => {
+  // console.log(window.pageYOffset);
+
+  if (window.pageYOffset >= 430) {
+    module.forEach((element) => {
+      element.classList.add('active');
+    })
+  }
+})
